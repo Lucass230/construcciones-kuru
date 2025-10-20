@@ -1452,26 +1452,26 @@ html, body {
         font-size: 1rem;
     }
 }
-#contacto-form input,
-#contacto-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 15px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  outline: none;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+/* Contenedor del formulario */
+.contacto-form {
+  max-width: 600px;  /* Ancho máximo del formulario */
+  margin: 0 auto;    /* Centrarlo */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-#contacto-form input:focus,
-#contacto-form textarea:focus {
-  border-color: #ff7a00; /* o el color principal que quieras */
-  box-shadow: 0 0 10px rgba(255,122,0,0.3);
-  background-color: #fff;
+/* Inputs y textarea */
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;           /* Ocupa todo el ancho del contenedor, no más */
+  max-width: 100%;       /* Evita que se pase */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
+
 
 #contacto-form button {
   background-color: #ff7a00; /* color de tu botón */
@@ -1488,4 +1488,5 @@ html, body {
   background-color: #e06a00;
   transform: translateY(-2px);
 }
+
 
