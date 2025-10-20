@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotización - Empresa de Construcción</title>
+    <link rel="stylesheet" href="cotizacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitá tu Cotización</h1>
+        <p>Completá el formulario y nos pondremos en contacto</p>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="https://formspree.io/f/meorngel" method="POST">
+                <div class="form-group">
+                    <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono"><i class="fas fa-phone"></i> Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="(381-)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio"><i class="fas fa-hard-hat"></i> Servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="" disabled selected>Elegí un servicio</option>
+                        <option value="obra-completa">Obra completa</option>
+                        <option value="remodelacion">Remodelación</option>
+                        <option value="ampliacion">Ampliación</option>
+                        <option value="reformas">Reformas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje"><i class="fas fa-comment-dots"></i> Detalles adicionales</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos más sobre tu proyecto"></textarea>
+                </div>
+
+                <button type="submit">Enviar Cotización</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 - Empresa de Construcción</p>
+    </footer>
+</body>
+</html>

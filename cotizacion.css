@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://cdn.prod.website-files.com/66450b109aba5ab55b1eaadc/66763d2b95578e14430fb31a_KURU%20resuelve%20los%20gastos%20de%20fondo%20fijo%20de%20las%20obras%20de%20construccion-p-1600.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Formulario */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.95);
+    color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.form-container form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container label i {
+    margin-right: 8px;
+    color: #ffcc00; /* color iconos */
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255,204,0,0.5);
+}
+
+.form-container button {
+    background-color: #ffcc00;
+    color: #222;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.form-container button:hover {
+    background-color: #e6b800;
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Para que el select se vea bien */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+    background-size: 16px;
+    padding-right: 40px;
+    cursor: pointer;
+}
